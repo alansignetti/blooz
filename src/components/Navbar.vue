@@ -7,9 +7,9 @@
    <img v-bind:src="logoImg" alt="Logo" />
   </div> -->
   <ul class="nav-links">
-   <li v-for="list in navLinks" :key="list.key">
-    <a v-if="list.dropdown === false" :href="list.link">{{ list.name }}</a>
-    <div class="dropdown-link" v-else>
+   <li v-on:click="openMobileNav()"><!--   v-for="list in navLinks" :key="list.key" -->
+    <!-- <a v-if="list.dropdown === false" :href="list.link">{{ list.name }}</a> -->
+    <!-- <div class="dropdown-link" v-else>
      <a :href="list.link">
                {{ list.name }}
                
@@ -20,7 +20,10 @@
        <a :href="item.link">{{ item.name }}</a>
       </li>
      </ul>
-    </div>
+    </div> -->
+    <router-link to="/">Home</router-link>
+    <router-link to="/pedir">Pedir</router-link>
+    <router-link to="/contacto">Contacto</router-link>
    </li>
   </ul>
   <div v-on:click="openMobileNav()" id="burger">

@@ -76,8 +76,13 @@
 .content
 {
     /* display: block; */
+   
     float: left;
     width: 50%;
+}
+
+.content h4{
+ margin-top: 40px;
 }
 
 .img{
@@ -102,6 +107,10 @@
     }
     .items p{
         font-size: 12px;
+    }
+
+    .content h4{
+        margin-top: 0px;
     }
     
 
