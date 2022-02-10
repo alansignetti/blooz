@@ -24,10 +24,8 @@
 
 <style scoped>
 
-.body {
-
-   
-    background: #59ABE3;
+.body {  
+    background: #fff;
     margin-top: 20px;
     margin: 0px auto;
 }
@@ -38,14 +36,14 @@
     height: 480px;
     background: #e6e6e6;
     border-radius: 8px;
-    box-shadow: 0 0 40px -10px #000;
+    box-shadow: 0 0 40px -10px rgba(100, 92, 92, 0.781);
     margin: calc(50vh - 220px) auto;
     padding: 20px 30px;
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     position: relative;
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 h2 {
@@ -110,7 +108,6 @@ div {
 }
 .phone{
     position: absolute;
-     /* position: relative;  */
     bottom: -35px;
     right: 0px;
 }
