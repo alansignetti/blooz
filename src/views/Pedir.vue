@@ -1,19 +1,20 @@
 <template>
 
+
+  <h1>Pedir</h1>
 <HowItWorks></HowItWorks>
-  <!-- <Footer></Footer> -->
 </template>
+
+
 
 <script>
 
 import HowItWorks from '@/components/HowItWorks.vue'
 
 export default {
-  name: 'Home',
+  name: 'Pedir',
   components: {
     HowItWorks
   }
 }
 </script>
-
-
