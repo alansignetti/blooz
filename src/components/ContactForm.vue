@@ -110,6 +110,7 @@ div {
 }
 .phone{
     position: absolute;
+     /* position: relative;  */
     bottom: -35px;
     right: 0px;
 }
@@ -123,12 +124,20 @@ span {
 @media screen and (max-width: 40.375em){
 
 .phone{
-    bottom: -25px;
-    right: 0px;
+    position: unset;
+    margin-top: 110px;
+    margin-left:0px ;
+    width: 270px;
+    display: flex;
 }
 
 .body{
      width: 100%;
+}
+
+.form {    
+ 
+    position: unset;
 }
 
 }

@@ -40,7 +40,8 @@ export default {
     width: 300px;
     border: none;
     border-radius: 16px;
-    margin-bottom: 150px;
+    margin-bottom: 150px;   
+    position: unset;
 }
 
 .info {
