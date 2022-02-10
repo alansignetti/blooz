@@ -1,26 +1,13 @@
 <template>
  <nav>
-  <div v-if="name" id="logo">
-         {{ name }}
+  <div v-if="name" id="logo" v-on:click="openMobileHome()">
+         
+         <router-link to="/">{{ name }}</router-link>
       </div>
-  <!-- <div v-else id="logo">
-   <img v-bind:src="logoImg" alt="Logo" />
-  </div> -->
+
   <ul class="nav-links">
-   <li v-on:click="openMobileNav()"><!--   v-for="list in navLinks" :key="list.key" -->
-    <!-- <a v-if="list.dropdown === false" :href="list.link">{{ list.name }}</a> -->
-    <!-- <div class="dropdown-link" v-else>
-     <a :href="list.link">
-               {{ list.name }}
-               
-      <span>&#x2193;</span>
-     </a>
-     <ul class="dropdown-menu">
-      <li v-for="item in list.dropdownLinks" :key="item.key">
-       <a :href="item.link">{{ item.name }}</a>
-      </li>
-     </ul>
-    </div> -->
+   <li v-on:click="openMobileNav()">     
+
     <router-link to="/">Home</router-link>
     <router-link to="/pedir">Pedir</router-link>
     <router-link to="/contacto">Contacto</router-link>
@@ -63,49 +50,20 @@ export default {
         }
       })
     },
-    // openDropdownNav() {
-    //   const dropdownLink = document.querySelectorAll('.dropdown-link')
-    //   dropdownLink.forEach((dropdown) => {
-    //     dropdown.addEventListener('mouseover', () => {
-    //       dropdown.children[1].style.display = 'block'
-    //     })
-    //     dropdown.addEventListener('mouseleave', () => {
-    //       dropdown.children[1].style.display = 'none'
-    //     })
-    //   })
-    // },
-    /* Run only on mobile
-       
-       This code below here will change the behavior of mobile menu links.
-       when you click for once it will open the drop down & by the
-       second click it will lead you to the link page if you don't
-       want to go in dropdown links
-    */
-    countClicksOnMobileDropdown() {
-      const dropdownLink = document.querySelectorAll('.dropdown-link')
-      dropdownLink.forEach((dropdown) => {
-        let counts = dropdown.clicks || 0
-        dropdown.addEventListener('click', () => {
-          counts++
-          if (counts % 2 == 0) {
-            window.location.href = dropdown.children[0].getAttribute('href')
-          } else {
-            event.preventDefault()
-            dropdown.children[1].style.display = 'block'
-            setTimeout(() => {
-              dropdown.children[1].style.display = 'none'
-            }, 5000)
-          }
-        })
-        setTimeout(()=>{counts = 0}, 8000)
-      })
+    // si está abierta la navbar mobile y hace click en home, se cierra nav
+    openMobileHome() {
+      const burger = document.getElementById('burger');
+
+      if(burger.classList.value =='toggle'){
+        document.getElementById('burger').click();
+      } 
     },
+
+
+
+
   },
   mounted() {
-    // this.openDropdownNav()
-    // if (window.innerWidth < 768) {
-    //   this.countClicksOnMobileDropdown()
-    // }
   },
 }
 </script>
@@ -115,7 +73,7 @@ export default {
   margin-top: 140px !important;
 }
 nav {
-  /* z-index: 100; */
+  
   position:relative;
 display: flex;
 justify-content: space-around;
@@ -127,10 +85,24 @@ font-family: 'Montserrat', sans-serif;
 div#logo {
   
 letter-spacing: 5px;
-color: #fefefe;
+color: #fefefe ;
 font-weight: 800;
 font-size: 2rem;
+
 }
+a{
+  text-decoration: none;
+  color: #fefefe ;
+}
+a:active{
+  text-decoration: none;
+  color: #fefefe ;
+}
+a:hover{
+  text-decoration: none;
+  color: #fefefe ;
+}
+
 ul.nav-links {
 display: flex;
 justify-content: space-between;

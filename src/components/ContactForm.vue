@@ -128,7 +128,7 @@ span {
 }
 
 .body{
-     width: 350px;
+     width: 100%;
 }
 
 }

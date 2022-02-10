@@ -2,20 +2,6 @@
   <div id="app">
     <Navbar
       name="Moover"
-      :navLinks="[
-        {
-          name: 'Home',
-          link: '/',
-          dropdown: false,
-        },
-
-        
-
-        { name: 'Pedir', link: '/pedir', dropdown: false },
-        { name: 'Contacto', link: '/contacto', dropdown: false },
-
-
-      ]"
     />
 
 

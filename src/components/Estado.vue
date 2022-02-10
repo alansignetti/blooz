@@ -32,7 +32,7 @@ export default {
 <style scoped>
 
 .body{
-    height: 300px;
+    height: 400px;
 }
 .card {
     

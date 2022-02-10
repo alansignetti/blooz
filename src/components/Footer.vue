@@ -25,36 +25,9 @@
         <li>
           <a href="#">Print</a>
         </li>
-            
-        <li>
-          <a href="#">Alternative Ads</a>
-        </li>
       </ul>
     </li>
-    
-    <li class="nav__item nav__item--extra">
-      <h2 class="nav__title">Technology</h2>
-      
-      <ul class="nav__ul nav__ul--extra">
-        
-        
-        <li>
-          <a href="#">IoT</a>
-        </li>
-      </ul>
-    </li>
-    
-    <li class="nav__item">
-      <h2 class="nav__title">Legal</h2>
-      
-      <ul class="nav__ul">
-        <li>
-          <a href="#">Privacy Policy</a>
-        </li>
-        
 
-      </ul>
-    </li>
   </ul>
   
 
