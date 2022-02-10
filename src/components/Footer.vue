@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <div class="footer__addr">
+      <div class="footer__addr">
     
         <router-link to="/contacto" custom 
             v-slot="{navigate, isActive }">
@@ -11,7 +11,7 @@
                 </a> -->
         </router-link>
    
-  </div>
+      </div>
   
   <ul class="footer__nav">
     <li class="nav__item">
@@ -115,11 +115,19 @@ body {
 }
 
 .footer__logo {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Montserrat', sans-serif;  
   font-weight: 400;
-  text-transform: lowercase;
+  width: max-content;
+  /* text-transform: lowercase; */
   font-size: 1.5rem;
   cursor: pointer;
+  outline: 5px outset #1C6EA4;
+  outline-offset: 2px;
+}
+
+.footer__logo:hover {
+  outline: 5px outset #1C6EA4;
+  outline-offset: 0px;
 }
 
 .footer__addr h2 {

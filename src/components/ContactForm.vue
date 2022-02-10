@@ -12,7 +12,7 @@
         <p type="Mensaje:">
             <input placeholder="Cuéntanos..">
         </p>
-        <button type="button">Enviar</button>
+        <button type="submit" formaction="https://alansignetti.github.io/blooz/">Enviar</button>
         <div class="phone">
             <span class="fa fa-phone"></span>+51 947 372 369 <span class="fa fa-envelope-o"></span>comercial@blooz.pe
         </div>
@@ -33,6 +33,7 @@
 }
 
 .form {
+    
     width: 340px;
     height: 480px;
     background: #e6e6e6;
@@ -43,7 +44,8 @@
     max-width: calc(100vw - 40px);
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    position: relative
+    position: relative;
+    margin-top: 150px;
 }
 
 h2 {

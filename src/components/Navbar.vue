@@ -125,6 +125,7 @@ min-height: 8vh;
 font-family: 'Montserrat', sans-serif;
 }
 div#logo {
+  
 letter-spacing: 5px;
 color: #fefefe;
 font-weight: 800;
