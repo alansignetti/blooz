@@ -69,9 +69,7 @@ export default {
 </script>
 
 <style >
-.mt-5{
-  margin-top: 140px !important;
-}
+
 nav {
   
   position:relative;

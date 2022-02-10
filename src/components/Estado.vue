@@ -30,7 +30,9 @@ export default {
 </script>
 
 <style scoped>
-
+.mt-5{
+  margin-top: 40px !important;
+}
 .body{
     height: 400px;
 }
