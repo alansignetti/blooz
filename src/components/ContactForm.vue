@@ -12,7 +12,7 @@
         <p type="Mensaje:">
             <input placeholder="Cuéntanos..">
         </p>
-        <button>Enviar</button>
+        <button type="submit">Enviar</button>
         <div class="phone">
             <span class="fa fa-phone"></span>+51 947 372 369 <span class="fa fa-envelope-o"></span>comercial@blooz.pe
         </div>
