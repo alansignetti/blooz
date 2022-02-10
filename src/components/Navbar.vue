@@ -24,6 +24,7 @@
     <router-link to="/">Home</router-link>
     <router-link to="/pedir">Pedir</router-link>
     <router-link to="/contacto">Contacto</router-link>
+    <router-link to="/estado">Estado</router-link>
    </li>
   </ul>
   <div v-on:click="openMobileNav()" id="burger">
@@ -109,8 +110,13 @@ export default {
 }
 </script>
 
-<style>
+<style >
+.mt-5{
+  margin-top: 140px !important;
+}
 nav {
+  /* z-index: 100; */
+  position:relative;
 display: flex;
 justify-content: space-around;
 align-items: center;
@@ -138,7 +144,8 @@ text-decoration: none;
 color: #fefefe;
 font-size: 1.2rem;
 font-weight: 500;
-display: block;
+display: inline-flex;
+margin-right: 30px;
 }
 #burger {
 display: none;
@@ -207,6 +214,8 @@ line-height: 50px;
 
   ul.nav-links a {
     width: 100%;
+    display: block;
+    margin-right: 0;
   }
 
   div#burger {
